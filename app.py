@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simple runner for the Trade Calculator bundle.
+Simple runner for the Trade Calculator.
 Run this file with: python app.py
 It starts a static HTTP server serving the folder (index.html) and opens your browser.
 If port 8080 is taken it will try 8000.
@@ -44,7 +44,7 @@ def find_free_port(ports):
 
 
 def run():
-    parser = argparse.ArgumentParser(description="Serve the trade_calculator_bundle folder and open a browser")
+    parser = argparse.ArgumentParser(description="Serve the trade_calculator folder and open a browser")
     parser.add_argument('--port', '-p', type=int, help='Port to use (overrides automatic selection)')
     parser.add_argument('--no-browser', action='store_true', help="Don't open the web browser automatically")
     args = parser.parse_args()
